@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: #C5705D;
+}
+navbar{
+    background-color: #F8EDE3;
+    color: #C5705D;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px dotted #C5705D;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
+}
+.custom-file-upload-btn {
+  border: 1px dotted #C5705D;
+  color: #C5705D;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
+  background-color: transparent;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header{
+  color: #C5705D;
+  font-size: 2rem;
+  line-height: 0px;
+}
+.intro-note{
+  color: #D0B8A8;
+  font-size: 1.2rem;
+  line-height: 0px;
+}
+
+.records-container{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+.month{
+  font-size: 1.2rem;
+}
+.totalIncome, .totalSpend{
+  font-size: 1.1rem;
+}
+.record{
+  display: flex;
+  flex-direction: column;
+}
+.vendor-record, .month-record{
+  display: flex;
+  justify-content: space-between;
+}
+.vendor-data, .month-data{
+  display: flex;
+  gap: 2rem;
+}
+.month-record{
+  padding: 2rem;
+  background-color: #C5705D;
+  color:#F8EDE3;
+  margin: 1rem;
+}
+.vendor-record{
+  padding: 1rem;
+  background-color: #F8EDE3;
+  color:#C5705D;
+  margin: 0.2rem;
+  display: none;
+}
+
+
+.table {
+  width: 80vw;
+  border-collapse: collapse;
+}
+
+.table, .table th, .table td {
+  border: 1px solid black;
+}
+
+.table th, .table td {
+  padding: 8px;
+  text-align: left;
+}
+/* #err-message{
+  color: red;
+  border: 1px solid red;
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+} */

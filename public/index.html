@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Express App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <navbar>
+    <div>Statement Analyzer</div>
+    <form id="uploadForm" enctype="multipart/form-data">
+
+    <input id="fileInput" type="file" name="file"/>
+      <label for="fileInput" class="custom-file-upload">
+        Select File
+    </label>
+      <button type="submit" class="custom-file-upload-btn">
+        <!-- Done Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 0 1 .708-.708L6 10.793l7.146-7.147a.5.5 0 0 1 .708 0z"/>
+      </button>
+    </form>
+  </navbar>
+  <main>
+    <h1 class="intro-header">Please upload your bank statement in csv format!</h1>
+    <p class="intro-note">Note: Please only keep following columns, Date - Description - Debit - Credit</p>
+    <content>
+      <div id="err-message"></div>
+      <div id="data"></div>
+      <div class="records-container">
+        <!-- <div class="record">
+          <div class="month-record">
+            <div class="month">January</div>
+            <div class="month-data">
+              <div class="totalIncome">Total Income: $0</div>
+              <div class="totalSpend">Total Spend: $0</div>
+            </div>
+          </div> -->
+
+
+
+          <!-- <div class="vendor-record">
+            <div class="vendor">Vendor</div>
+            <div class="vendor-data">
+            <div class="vendorTotalIncome">Total Income: $0</div>
+            <div class="vendorTotalSpend">Total Spend: $0</div>
+            </div>
+          </div> -->
+        <!-- </div> -->
+
+        <!-- <table class="table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Debit</th>
+              <th>Credit</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table> -->
+      </div>
+    </content>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
